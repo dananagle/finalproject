@@ -1,0 +1,23 @@
+<%= simple_form_for(@person) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :address %>
+    <%= f.input :user_id %>
+    <%= f.input :website %>
+    <%= f.input :firstname %>
+    <%= f.input :lastname %>
+    <%= f.input :description %>
+    <%= f.input :eyecolor %>
+    <%= f.input :haircolor %>
+    <%= f.input :height %>
+    <%= f.input :waist %>
+    <%= f.input :bust %>
+    <%= f.input :hips %>
+    <%= f.input :availability %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
