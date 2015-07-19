@@ -2,18 +2,18 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :address %>
-    <%= f.input :user_id %>
-    <%= f.input :website %>
-    <%= f.input :firstname %>
-    <%= f.input :lastname %>
+    <%= f.input :address, required: true %>
+    <%= f.input :user_id, required: true %>
+    <%= f.input :website, required: true %>
+    <%= f.input :firstname, required: true %>
+    <%= f.input :lastname, required: true %>
     <%= f.input :description %>
-    <%= f.input :eyecolor %>
-    <%= f.input :haircolor %>
-    <%= f.input :height %>
-    <%= f.input :waist %>
-    <%= f.input :bust %>
-    <%= f.input :hips %>
+    <%= f.input :eyecolor, required: true %>
+    <%= f.input :haircolor, required: true %>
+    <%= f.input :height, required: true %>
+    <%= f.input :waist, required: true %>
+    <%= f.input :bust, required: true %>
+    <%= f.input :hips, required: true %>
     <%= f.input :availability %>
   </div>
 

@@ -2,14 +2,14 @@
 
 <h1>Listing People</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
-      <th>Address</th>
-      <th>User</th>
-      <th>Website</th>
+
       <th>Firstname</th>
       <th>Lastname</th>
+      <th>Address</th>
+      <th>Website</th>
       <th>Description</th>
       <th>Eyecolor</th>
       <th>Haircolor</th>
@@ -25,11 +25,10 @@
   <tbody>
     <% @people.each do |person| %>
       <tr>
-        <td><%= person.address %></td>
-        <td><%= person.user_id %></td>
-        <td><%= person.website %></td>
         <td><%= person.firstname %></td>
         <td><%= person.lastname %></td>
+        <td><%= person.address %></td>
+        <td><%= person.website %></td>
         <td><%= person.description %></td>
         <td><%= person.eyecolor %></td>
         <td><%= person.haircolor %></td>
@@ -38,14 +37,13 @@
         <td><%= person.bust %></td>
         <td><%= person.hips %></td>
         <td><%= person.availability %></td>
-        <td><%= link_to 'Show', person %></td>
-        <td><%= link_to 'Edit', edit_person_path(person) %></td>
-        <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
+<% if current_user %>
 <%= link_to 'New Person', new_person_path %>
+<% end %>
