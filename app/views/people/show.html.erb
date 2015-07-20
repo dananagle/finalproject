@@ -1,82 +1,69 @@
+<div class="container">
 <div class="row">
-  <div class="col-md-3"
-  <h3><%= @person.name %></h3>
 
+<div class="col-md-6">
+<%= image_tag "IMG_0981.jpg", class: "img-responsive" %>
+</div>
+
+<div class="col-md-6">
+<h3><%= @person.firstname %></h3>
 <p>
-  <strong>Address:</strong>
+  <strong>Address</strong>
   <%= @person.address %>
 </p>
-
 <p>
-  <strong>User:</strong>
+  <strong>User</strong>
   <%= @person.user_id %>
 </p>
-
 <p>
-  <strong>Website:</strong>
+  <strong>Website</strong>
   <%= @person.website %>
 </p>
-
 <p>
-  <strong>Lastname:</strong>
+  <strong>Lastname</strong>
   <%= @person.lastname %>
 </p>
-
 <p>
-  <strong>Description:</strong>
+  <strong>Description</strong>
   <%= @person.description %>
 </p>
 
 <p>
-  <strong>Eyecolor:</strong>
+  <strong>Eyecolor</strong>
   <%= @person.eyecolor %>
 </p>
 
 <p>
-  <strong>Haircolor:</strong>
+  <strong>Haircolor</strong>
   <%= @person.haircolor %>
 </p>
 
 <p>
-  <strong>Height:</strong>
-  <%= @person.height %>
+  <strong>Height</strong>
+  <%= @person.height.to_f / 12%>
 </p>
-
 <p>
-  <strong>Waist:</strong>
+  <strong>Waist</strong>
   <%= @person.waist %>
 </p>
 
 <p>
-  <strong>Bust:</strong>
+  <strong>Bust</strong>
   <%= @person.bust %>
 </p>
 
 <p>
-  <strong>Hips:</strong>
+  <strong>Hips</strong>
   <%= @person.hips %>
 </p>
 
 <p>
-  <strong>Availability:</strong>
+  <strong>Availability</strong>
   <%= @person.availability %>
 </p>
-<div id="map-canvas" style=width: 230px; height: 230px;"></div>"
-</div>
+<p class="justify"><%= @person.description %></p>
+<h4 class="text-right">$<%= @person.height.to_f / 100 %></h4>
 </div>
 
-<script type="text/javascript">
-  function initialize() {
-    var mycenter = { lat: <%= @place.latitude %>, lng: <%= @place.longitude %>}
-    var mapOptions = {
-      center: mycenter,
-      zoom: 8
-    };
-    var map = new google.maps.Map(document.getElementByID('map-canvas'), mapOptions);
-    var marker = new google.maps.Marker({
-      position: mycenter,
-      map: map
-    });
-  }
-  google.maps.event.addDomListener(window, 'load', initialize);
-  </script>
+</div>
+</div>

@@ -13,7 +13,7 @@ class CreatePeople < ActiveRecord::Migration
       t.integer :waist
       t.integer :bust
       t.integer :hips
-      t.boolean :availability
+      t.boolean :availability, default: true
 
       t.timestamps null: false
     end
