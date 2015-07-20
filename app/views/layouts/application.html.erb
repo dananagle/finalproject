@@ -5,6 +5,9 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgxNoEBIjpXZWU_u9BLEXNqI7cYyV0ORE">
+      </script>
 </head>
 <body>
 <%= render "layouts/header" %>
@@ -14,10 +17,12 @@
   <%= message %>
 </div>
 <% end %>
+<% if current_page?(root_path) %>
+<div class="landing">
+<% else %>
 <div class="container">
-
+<% end %>
 <%= yield %>
 </div>
-
 </body>
 </html>
