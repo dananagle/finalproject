@@ -1,47 +1,12 @@
+
 <p id="notice"><%= notice %></p>
 
 <h1>Listing People</h1>
 
-<table class="table">
-  <thead>
-    <tr>
+<div class="row">
+<%= render @people %>
+</div>
 
-      <th>Firstname</th>
-      <th>Lastname</th>
-      <th>Address</th>
-      <th>Website</th>
-      <th>Description</th>
-      <th>Eyecolor</th>
-      <th>Haircolor</th>
-      <th>Height</th>
-      <th>Waist</th>
-      <th>Bust</th>
-      <th>Hips</th>
-      <th>Availability</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @people.each do |person| %>
-      <tr>
-        <td><%= person.firstname %></td>
-        <td><%= person.lastname %></td>
-        <td><%= person.address %></td>
-        <td><%= person.website %></td>
-        <td><%= person.description %></td>
-        <td><%= person.eyecolor %></td>
-        <td><%= person.haircolor %></td>
-        <td><%= person.height %></td>
-        <td><%= person.waist %></td>
-        <td><%= person.bust %></td>
-        <td><%= person.hips %></td>
-        <td><%= person.availability %></td>
-
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 <br>
 <% if current_user %>

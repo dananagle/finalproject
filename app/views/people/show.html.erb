@@ -8,7 +8,7 @@
 <div class="col-md-6">
 <h3><%= @person.firstname %></h3>
 <p>
-  <strong>Address</strong>
+  <strong>Local Market</strong>
   <%= @person.address %>
 </p>
 <p>
@@ -16,13 +16,10 @@
   <%= @person.user_id %>
 </p>
 <p>
-  <strong>Website</strong>
+  <strong>Agent's Website</strong>
   <%= @person.website %>
 </p>
-<p>
-  <strong>Lastname</strong>
-  <%= @person.lastname %>
-</p>
+
 <p>
   <strong>Description</strong>
   <%= @person.description %>
@@ -62,8 +59,11 @@
   <%= @person.availability %>
 </p>
 <p class="justify"><%= @person.description %></p>
-<h4 class="text-right">$<%= @person.height.to_f / 100 %></h4>
+
 </div>
 
 </div>
 </div>
+
+<%= link_to "Edit", edit_person_path(@person)  %>
+<%= link_to "Back", person_path  %>

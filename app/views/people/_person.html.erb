@@ -1,0 +1,11 @@
+<div class="col-md-3">
+  <div class="thumbnail">
+    <%= link_to person_path(person) do %>
+    <%=image_tag "IMG_0980.jpg", class: "img-responsive" %>
+    <% end %>
+    <div class="caption">
+      <p><strong><%= link_to person.firstname, person_path(person) %></strong></p>
+      <h3><%= person.firstname %></h3>
+    </div>
+  </div>
+</div>

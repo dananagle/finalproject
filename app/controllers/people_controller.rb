@@ -6,6 +6,8 @@ class PeopleController < ApplicationController
   # GET /people.json
   def index
     @people = Person.all
+
+#  @people = Person.where(availability: true)
   end
 
   # GET /people/1
