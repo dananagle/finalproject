@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Discernings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Walk</th>
+      <th>Presence</th>
+      <th>Personality</th>
+      <th>Posture</th>
+      <th>Carriage</th>
+      <th>Bone</th>
+      <th>Structure</th>
+      <th>Smile</th>
+      <th>Appearance</th>
+      <th>Distinctiveness</th>
+      <th>Jenesaisquoi</th>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @discernings.each do |discerning| %>
+      <tr>
+        <td><%= discerning.walk %></td>
+        <td><%= discerning.presence %></td>
+        <td><%= discerning.personality %></td>
+        <td><%= discerning.posture %></td>
+        <td><%= discerning.carriage %></td>
+        <td><%= discerning.bone %></td>
+        <td><%= discerning.structure %></td>
+        <td><%= discerning.smile %></td>
+        <td><%= discerning.appearance %></td>
+        <td><%= discerning.distinctiveness %></td>
+        <td><%= discerning.jenesaisquoi %></td>
+        <td><%= discerning.comment %></td>
+        <td><%= link_to 'Show', discerning %></td>
+        <td><%= link_to 'Edit', edit_discerning_path(discerning) %></td>
+        <td><%= link_to 'Destroy', discerning, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Discerning', new_discerning_path %>
