@@ -46,5 +46,6 @@ group :development, :test do
   gem 'simple_form'
   gem 'devise'
   gem 'geocoder'
+  gem 'paperclip', '~> 4.3.0'
 
 end

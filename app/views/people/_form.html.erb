@@ -5,16 +5,17 @@
     <%= f.input :address, required: true, label: false, placeholder: "Home Market", input_html: {class: "form-control", rows: 5} %>
     <%= f.input :website, required: true, label: false, placeholder: "Agent's website", input_html: {class: "form-control", rows: 5} %>
     <br>
-    <%= f.input :description, required: true%>
-    <%= f.input :firstname, required: true %>
-    <%= f.input :lastname, required: true %>
-    <%= f.input :description %>
-    <%= f.input :eyecolor, required: true %>
-    <%= f.input :haircolor, required: true %>
-    <%= f.input :height, required: true %>
-    <%= f.input :waist, required: true %>
-    <%= f.input :bust, required: true %>
-    <%= f.input :hips, required: true %>
+    <br>
+    <%= f.input :firstname, required: true, label: false, placeholder: "Firstname", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :lastname, required: true, label: false, placeholder: "Lastname", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :eyecolor, required: true, label: false, placeholder: "Eye Color", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :haircolor, required: true, label: false, placeholder: "Hair Color", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :height, required: true, label: false, placeholder: "Height", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :waist, required: true, label: false, placeholder: "Waist", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :bust, required: true, label: false, placeholder: "Bust", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :hips, required: true, label: false, placeholder: "Hips", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :description, label: false, placeholder: "Home Market", input_html: {class: "form-control", rows: 5} %>
+
     <div class="checkbox text-center">
     <p>Availability</p>
     <%= f.input :availability, required: false, label: false %>
