@@ -29,7 +29,7 @@ gem 'simple_form'
 gem 'devise'
 gem 'geocoder'
 gem 'paperclip', '~> 4.3.0'
-
+gem 'ratyrate'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

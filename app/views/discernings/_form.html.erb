@@ -2,18 +2,17 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :walk %>
-    <%= f.input :presence %>
-    <%= f.input :personality %>
-    <%= f.input :posture %>
-    <%= f.input :carriage %>
-    <%= f.input :bone %>
-    <%= f.input :structure %>
-    <%= f.input :smile %>
-    <%= f.input :appearance %>
-    <%= f.input :distinctiveness %>
-    <%= f.input :jenesaisquoi %>
-    <%= f.input :comment %>
+    <%= f.input :walk, label: false, placeholder: "Walk", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :presence, label: false, placeholder: "Presence", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :personality, label: false, placeholder: "Personality", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :posture, label: false, placeholder: "Posture", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :carriage, label: false, placeholder: "Carriage", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :bone, label: false, placeholder: "Bone Structure", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :smile, label: false, placeholder: "Smile", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :appearance, label: false, placeholder: "Appearance", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :distinctiveness, label: false, placeholder: "Distinctiveness", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :jenesaisquoi, label: false, placeholder: "Je ne sais quoi", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :comment, label: false, placeholder: "Comment", input_html: {class: "form-control", rows: 5} %>
   </div>
 
   <div class="form-actions">

@@ -10,7 +10,7 @@ class Person < ActiveRecord::Base
   validates_presence_of :hips
   belongs_to :user
 
-
+ratyrate_rateable
 
   has_many :discernings, dependent: :destroy
 end

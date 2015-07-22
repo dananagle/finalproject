@@ -2,13 +2,38 @@
   <h1 class="text-center">Call Backs</h1>
 <div class="col-md-4">
 <h3 class="text-center">
-Signed Models
+Models On Runway <%= link_to "Model", new_person_path, class: "btn btn-primary" %>
 </h3>
+<table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Location</th>
+          <th>Agent's Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @people.each do |person| %>
+        <tr>
+          <th scope="row">1</th>
+          <td><%= person.id %></td>
+          <td><%= link_to person.firstname, person_path(person) %></td>
+          <td><%= person.address %></td>
+          <td><%= person.website %></td>
+          <td><%= link_to "Edit", edit_person_path(person) %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+
 </div>
 <div class="row">
 <div class="col-md-4">
 <h3 class="text-center">
-Call Backs - Local
+Call Backs - Local <%= link_to "Model", new_person_path, class: "btn btn-primary" %>
 </div>
 <div class="row">
 <div class="col-md-4">

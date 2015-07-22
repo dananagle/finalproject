@@ -7,5 +7,6 @@ class PagesController < ApplicationController
   end
 
   def dashboard
+    @people = current_user.people
   end
 end
