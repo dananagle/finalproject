@@ -2,16 +2,26 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :walk, label: false, placeholder: "Walk", input_html: {class: "form-control", rows: 5} %>
-    <%= f.input :presence, label: false, placeholder: "Presence", input_html: {class: "form-control", rows: 5} %>
-    <%= f.input :personality, label: false, placeholder: "Personality", input_html: {class: "form-control", rows: 5} %>
-    <%= f.input :posture, label: false, placeholder: "Posture", input_html: {class: "form-control", rows: 5} %>
-    <%= f.input :carriage, label: false, placeholder: "Carriage", input_html: {class: "form-control", rows: 5} %>
-    <%= f.input :bone, label: false, placeholder: "Bone Structure", input_html: {class: "form-control", rows: 5} %>
-    <%= f.input :smile, label: false, placeholder: "Smile", input_html: {class: "form-control", rows: 5} %>
-    <%= f.input :appearance, label: false, placeholder: "Appearance", input_html: {class: "form-control", rows: 5} %>
-    <%= f.input :distinctiveness, label: false, placeholder: "Distinctiveness", input_html: {class: "form-control", rows: 5} %>
-    <%= f.input :jenesaisquoi, label: false, placeholder: "Je ne sais quoi", input_html: {class: "form-control", rows: 5} %>
+    <%= f.input :walk, as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
+    <br/>
+
+    <%= f.input :presence, as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
+    <br/>
+    <%= f.input :personality, as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
+    <br/>
+    <%= f.input :posture, as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
+    <br/>
+    <%= f.input :carriage, as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
+    <br/>
+    <%= f.input :bone, label: "Bone Structure", as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
+    <br/>
+    <%= f.input :smile, label: "Smile", as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
+    <br/>
+    <%= f.input :appearance, label: "Appearance", as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
+    <br/>
+    <%= f.input :distinctiveness, label: "Distinctiveness", as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
+    <br/>
+  
     <%= f.input :comment, label: false, placeholder: "Comment", input_html: {class: "form-control", rows: 5} %>
   </div>
 
