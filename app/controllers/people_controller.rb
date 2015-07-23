@@ -14,6 +14,7 @@ class PeopleController < ApplicationController
   # GET /people/1.json
   def show
     @discerning = Discerning.new
+    @discerning.person = @person
   end
 
   # GET /people/new

@@ -24,6 +24,7 @@ class DiscerningsController < ApplicationController
   # POST /discernings.json
   def create
     @discerning = Discerning.new(discerning_params)
+    @discerning.user = current_user
 
     respond_to do |format|
       if @discerning.save
@@ -64,6 +65,6 @@ class DiscerningsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def discerning_params
-      params.require(:discerning).permit(:walk, :presence, :personality, :posture, :carriage, :bone, :structure, :smile, :appearance, :distinctiveness, :jenesaisquoi, :comment)
+      params.require(:discerning).permit(:person_id, :walk, :presence, :personality, :posture, :carriage, :bone, :structure, :smile, :appearance, :distinctiveness, :jenesaisquoi, :comment)
     end
 end

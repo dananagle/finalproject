@@ -29,8 +29,10 @@ gem 'simple_form'
 gem 'devise'
 gem 'geocoder'
 gem 'paperclip', '~> 4.3.0'
+gem 'aws-sdk', '< 2.0'
 gem 'ratyrate'
-gem 'aws-sdk'
+gem 'dotenv-rails'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

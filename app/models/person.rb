@@ -23,7 +23,5 @@ class Person < ActiveRecord::Base
   validates :resource, attachment_presence: false
 
 
-ratyrate_rateable
-
   has_many :discernings, dependent: :destroy
 end
