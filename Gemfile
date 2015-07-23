@@ -30,6 +30,7 @@ gem 'devise'
 gem 'geocoder'
 gem 'paperclip', '~> 4.3.0'
 gem 'ratyrate'
+gem 'aws-sdk'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
