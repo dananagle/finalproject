@@ -4,5 +4,5 @@
 //= require_tree .
 
 $( document ).ready( function(){
-	$('.rating').rating();
+	$('.rating').barrating();
 })
