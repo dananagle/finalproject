@@ -14,7 +14,6 @@ class DiscerningsController < ApplicationController
 
   # GET /discernings/new
   def new
-    @discerning = Discerning.new
   end
 
   # GET /discernings/1/edit

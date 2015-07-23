@@ -13,6 +13,7 @@ class PeopleController < ApplicationController
   # GET /people/1
   # GET /people/1.json
   def show
+    @discerning = Discerning.new
   end
 
   # GET /people/new
@@ -73,6 +74,6 @@ class PeopleController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def person_params
-      params.require(:person).permit(:address, :user_id, :website, :firstname, :lastname, :description, :eyecolor, :haircolor, :height, :waist, :bust, :hips, :availability)
+      params.require(:person).permit(:address, :user_id, :website, :firstname, :lastname, :description, :eyecolor, :haircolor, :height, :waist, :bust, :hips, :availability, :image, :resorce)
     end
 end

@@ -9,6 +9,8 @@ class Person < ActiveRecord::Base
   validates_presence_of :bust
   validates_presence_of :hips
   belongs_to :user
+  has_attached_file :image
+  has_attached_file :resource
 
 ratyrate_rateable
 

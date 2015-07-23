@@ -1,27 +1,26 @@
-<%= simple_form_for(@discerning) do |f| %>
+<%= simple_form_for discerning do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :walk, as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
+    <%= f.input :walk, as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Liked", 3], ["Liked", 4], ["Liked", 5], ["Liked", 6], ["Liked", 7] ]  , input_html: {class: "rating"}, prompt: false %>
+    <br/>
+    <%= f.input :presence, as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3], ["Liked", 4], ["Liked", 5], ["Liked", 6], ["Liked", 7] ]  , input_html: {class: "rating"}, prompt: false %>
+    <br/>
+    <%= f.input :personality, as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3], ["Liked", 4], ["Liked", 5], ["Liked", 6], ["Liked", 7] ]  , input_html: {class: "rating"}, prompt: false %>
+    <br/>
+    <%= f.input :posture, as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3], ["Liked", 4], ["Liked", 5], ["Liked", 6], ["Liked", 7] ]  , input_html: {class: "rating"}, prompt: false %>
+    <br/>
+    <%= f.input :carriage, as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3], ["Liked", 4], ["Liked", 5], ["Liked", 6], ["Liked", 7] ]  , input_html: {class: "rating"}, prompt: false %>
+    <br/>
+    <%= f.input :bone, label: "Bone Structure", as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3], ["Liked", 4], ["Liked", 5], ["Liked", 6], ["Liked", 7] ]  , input_html: {class: "rating"}, prompt: false %>
+    <br/>
+    <%= f.input :smile, label: "Smile", as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3], ["Liked", 4], ["Liked", 5], ["Liked", 6], ["Liked", 7] ]  , input_html: {class: "rating"}, prompt: false %>
+    <br/>
+    <%= f.input :appearance, label: "Appearance", as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3], ["Liked", 4], ["Liked", 5], ["Liked", 6], ["Liked", 7] ]  , input_html: {class: "rating"}, prompt: false %>
+    <br/>
+    <%= f.input :distinctiveness, label: "Distinctiveness", as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3], ["Liked", 4], ["Liked", 5], ["Liked", 6], ["Liked", 7] ]  , input_html: {class: "rating"}, prompt: false %>
     <br/>
 
-    <%= f.input :presence, as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
-    <br/>
-    <%= f.input :personality, as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
-    <br/>
-    <%= f.input :posture, as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
-    <br/>
-    <%= f.input :carriage, as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
-    <br/>
-    <%= f.input :bone, label: "Bone Structure", as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
-    <br/>
-    <%= f.input :smile, label: "Smile", as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
-    <br/>
-    <%= f.input :appearance, label: "Appearance", as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
-    <br/>
-    <%= f.input :distinctiveness, label: "Distinctiveness", as: :select, collection:[ ["Did not like", 0], ["Ok", 1], ["Liked", 2], ["Loved", 3] ]  , input_html: {class: "rating"}, prompt: false %>
-    <br/>
-  
     <%= f.input :comment, label: false, placeholder: "Comment", input_html: {class: "form-control", rows: 5} %>
   </div>
 

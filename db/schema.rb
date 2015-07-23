@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150722152861) do
+ActiveRecord::Schema.define(version: 20150723040546) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,7 +41,6 @@ ActiveRecord::Schema.define(version: 20150722152861) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
     t.integer  "user_id"
-    t.integer  "person_id"
   end
 
   create_table "overall_averages", force: :cascade do |t|
@@ -65,9 +64,9 @@ ActiveRecord::Schema.define(version: 20150722152861) do
     t.integer  "waist"
     t.integer  "bust"
     t.integer  "hips"
-    t.boolean  "availability"
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
+    t.boolean  "availability",          default: true
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
     t.float    "latitude"
     t.float    "longitude"
     t.string   "image_file_name"
