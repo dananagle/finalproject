@@ -1,25 +1,31 @@
+ <div class="col-md-6">
+ <%=image_tag @person.image.url(:original), class: "img-responsive" %>
+ <p>
+   <strong>Local Market</strong>
+   <%= @person.address %>
+ </p>
+ <p>
+   <strong>Agent's Website</strong>
+   <%= @person.website %>
+ </p>
+ <p>
+   <strong>Availability</strong>
+   <%= @person.availability %>
+ </p>
+ <p>
+   <strong>Description</strong>
+   <%= @person.description %>
+ </p>
+
+-</div>
+
 <div class="container">
 <div class="row">
 
 <div class="col-md-6">
-<%= image_tag "IMG_0981.jpg", class: "img-responsive" %>
-
-
 
 <h3><%= @person.firstname %></h3>
 <p>
-  <strong>Local Market</strong>
-  <%= @person.address %>
-</p>
-<p>
-  <strong>Agent's Website</strong>
-  <%= @person.website %>
-</p>
-
-<p>
-  <strong>Description</strong>
-  <%= @person.description %>
-</p>
 
 <p>
   <strong>Eyecolor</strong>
@@ -49,13 +55,9 @@
   <strong>Hips</strong>
   <%= @person.hips %>
 </p>
-
-<p>
-  <strong>Availability</strong>
-  <%= @person.availability %>
-</p>
+<br>
+<br>
 </table>
-<p class="justify"><%= @person.description %></p>
 
 </div>
 

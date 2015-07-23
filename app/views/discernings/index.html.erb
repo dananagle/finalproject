@@ -2,21 +2,26 @@
 
 <h1>Impressions</h1>
 
-<table>
-  <thead>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
     <tr>
-      <th>Walk</th>
-      <th>Presence</th>
-      <th>Personality</th>
-      <th>Posture</th>
-      <th>Carriage</th>
-      <th>Bone</th>
-      <th>Structure</th>
-      <th>Smile</th>
-      <th>Appearance</th>
-      <th>Distinctiveness</th>
-      <th>Jenesaisquoi</th>
+      <th class="rotate"><div><span>Walk</span></div></th>
+      <th class="rotate"><div><span>Presence</span></div></th>
+      <th class="rotate"><div><span>Personality</span></div></th>
+      <th class="rotate"><div><span>Posture</span></div></th>
+      <th class="rotate"><div><span>Carriage</span></div></th>
+      <th class="rotate"><div><span>Bone Structure</span></div></th>
+      <th class="rotate"><div><span>Smile</span></div></th>
+      <th class="rotate"><div><span>Overall Appearance</span></div></th>
+      <th class="rotate"><div><span>Je ne sais quoi</span></div></th>
+      <th class="rotate"><div><span>Distinctiveness</span></div></th>
+
+
+
       <th>Comment</th>
+
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -30,7 +35,6 @@
         <td><%= discerning.posture %></td>
         <td><%= discerning.carriage %></td>
         <td><%= discerning.bone %></td>
-        <td><%= discerning.structure %></td>
         <td><%= discerning.smile %></td>
         <td><%= discerning.appearance %></td>
         <td><%= discerning.distinctiveness %></td>
@@ -41,9 +45,11 @@
         <td><%= link_to 'Destroy', discerning, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+
   </tbody>
 </table>
 
+</div><!-- /.table-responsive -->
 <br>
 
 <%= link_to 'New Impressions', new_discerning_path %>
