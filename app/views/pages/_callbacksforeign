@@ -1,1 +1,1 @@
-Call Backs - Foreign Market <%= link_to "Model", new_person_path, class: "btn btn-primary" %>
+Call Backs - Foreign  <%= link_to "Model", new_person_path, class: "btn btn-primary" %>

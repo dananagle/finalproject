@@ -32,7 +32,7 @@ gem 'paperclip', '~> 4.3.0'
 gem 'aws-sdk', '< 2.0'
 gem 'ratyrate'
 gem 'dotenv-rails'
-
+gem 'rails_12factor'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
