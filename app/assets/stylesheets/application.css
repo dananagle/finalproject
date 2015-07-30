@@ -22,7 +22,7 @@
     float:left;
     text-decoration:none;
     vertical-align:bottom;
-    background-image:image-url(star.gif);
+    background-image:image-url(star);
     background-repeat:no-repeat;
 }
 .ui-rating a {
