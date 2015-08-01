@@ -6,6 +6,7 @@
   <table class="table">
     <thead>
     <tr>
+      <th class="rotate"><span>Model</span></th>
       <th class="rotate"><span>Walk</span></th>
       <th class="rotate"><span>Presence</span></th>
       <th class="rotate"><span>Personality</span></th>
@@ -29,6 +30,7 @@
   <tbody>
     <% @discernings.each do |discerning| %>
       <tr>
+        <td><%= discerning.person.firstname %></td>
         <td><%= discerning.walk %></td>
         <td><%= discerning.presence %></td>
         <td><%= discerning.personality %></td>
