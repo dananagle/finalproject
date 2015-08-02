@@ -8,4 +8,6 @@ class User < ActiveRecord::Base
     validates_presence_of :name
     has_many :people, dependent: :destroy
     has_many :discernings, dependent: :destroy
+    has_many :tasks, dependent: :destroy
+
 end

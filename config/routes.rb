@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-
+  resources :tasks do
+      member do
+        put :change
+      end
+    end
   root 'pages#home'
   resources :discernings
   resources :people
