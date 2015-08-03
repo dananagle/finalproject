@@ -9,4 +9,12 @@ class PagesController < ApplicationController
   def dashboard
     @people = current_user.people
   end
+
+  def about
+  end
+
+  def test
+  end
+
+
 end
